@@ -44,22 +44,3 @@
     </footer>
 </body>
 </html>
-
-<button id="feedback-btn" class="feedback-button">Сообщить о проблеме</button>
-<div id="feedback-form" class="feedback-form">
-    <!-- Ваша форма Google Forms -->
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe4maZ3E5qK8Mg8JIQSurARDf_VOQr-_JEJqdWmYepE70v8cA/viewform?embedded=true" width="640" height="1070" frameborder="0" marginheight="0" marginwidth="0">Загрузка…</iframe>
-    <button id="close-btn" class="close-btn">×</button>
-</div>
-<script src="js/script.js"></script>
-</body>
-</html>
-
-<script>
-    window.addEventListener('load', function() {
-        const formIframe = document.querySelector('.feedback-form iframe');
-        if (formIframe && formIframe.contentWindow) {
-            formIframe.style.height = formIframe.contentWindow.document.body.scrollHeight + 'px';
-        }
-    });
-</script>
